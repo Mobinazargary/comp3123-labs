@@ -1,0 +1,131 @@
+/* Container for the form */
+form {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #006400; /* Green border */
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Title */
+form h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #006400;
+  margin-bottom: 20px;
+}
+
+/* Layout for form fields */
+/* Form Layout */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form-row .form-group {
+  flex: 1;
+  min-width: calc(33.33% - 15px); /* For three fields in one row */
+}
+
+/* Full-width elements */
+form .full-width {
+  flex: 100%;
+  min-width: 100%;
+}
+
+
+/* Labels */
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Input fields */
+form input[type="text"],
+form input[type="email"],
+form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form select:focus {
+  border-color: #006400;
+}
+
+/* Full-width elements */
+form .full-width {
+  flex: 100%;
+  min-width: 100%;
+}
+
+/* Checkbox container */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Submit button */
+form button[type="submit"] {
+  background-color: #006400;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+form button[type="submit"]:hover {
+  background-color: #004d00;
+}
+
+/* Submitted Data Container */
+.submitted-data {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #006400; /* Green border */
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Submitted Data Items */
+.submitted-data p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #333;
+  font-weight: normal;
+}
+
+.submitted-data p strong {
+  font-size: 1rem;
+  color: #006400; /* Green text for labels */
+  font-weight: bold;
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .form-row .form-group {
+    min-width: 100%;
+  }
+}
